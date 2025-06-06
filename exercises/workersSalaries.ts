@@ -19,7 +19,6 @@ class SueldosOperarios {
         if (sueldo <= 0) {
           console.log("Por favor, ingrese un sueldo válido mayor que 0.");
         }
-        console.log(sueldo, "pa ver el sueldo")
       } while (sueldo <= 0);
       this.sueldos.push(sueldo);
     }
