@@ -32,6 +32,5 @@ class SueldosOperarios {
   }
 }
 
-// Ejecución
 const operarios = new SueldosOperarios();
 operarios.imprimirSueldos();
