@@ -8,7 +8,6 @@ const app = express();
 
 app.use(cors())
 app.use(express.json())
-// app.use('/', 'Servidor funcionando🚀🔥')
 app.use('/articles', articleRoutes);
 
 module.exports = app;
