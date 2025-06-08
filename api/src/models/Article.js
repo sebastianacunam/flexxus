@@ -14,7 +14,7 @@ const articleSchema = new mongoose.Schema(
     },
     activo: {
       type: Boolean,
-      default: true,
+      required: true
     },
   },
   {

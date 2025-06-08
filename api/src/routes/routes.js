@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const { getAllArticles, createArticle } = require('../controllers/articleControllers');
+const { getAllArticlesControllers, createArticleControllers, deleteArticleControllers, updateArticleControllers } = require('../controllers/articleControllers');
 
-// Definición de rutas
-router.get('/getAllArticles', getAllArticles);
-// router.post('/createArticle', createArticle);
 
-module.exports = router; // <- esto es crucial
+router.get('/getAllArticles', getAllArticlesControllers);
+router.post('/createArticle', createArticleControllers);
+router.delete('/deleteArticle/:objectId', deleteArticleControllers);
+router.patch('/updateArticle/:objectId', updateArticleControllers);
+
+module.exports = router;
